@@ -1,0 +1,24 @@
+[package]
+name = "wio-terminal-probe-run"
+version = "0.1.0"
+authors = ["tomoyuki-nakabayashi <tomo.wait.for.it.yuki@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+cortex-m = "0.7.2"
+wio_terminal = "0.3.0"
+defmt = "0.2.0"
+defmt-rtt = "0.2.0"
+panic-probe = "0.2.0"
+
+[features]
+default = [
+  "defmt-default",
+]
+
+defmt-default = []
+defmt-trace = []
+defmt-debug = []
+defmt-info = []
+defmt-warn = []
+defmt-error = []
